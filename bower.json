@@ -1,0 +1,18 @@
+{
+  "name": "Bower Boilerplate",
+  "private": true,
+  "dependencies": {
+    "flickity": "1.2.1",
+    "angular-strap": "^2.3.8",
+    "angular-motion": "^0.4.4",
+    "angular-animate": "^1.5.5",
+    "angular-sanitize": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "ng-directive-lazy-image": "^0.3.1",
+    "Swiper": "idangerous-swiper#^3.3.1"
+  },
+  "devDependencies": {
+    "bourbon": "4.2.6",
+    "bootstrap-sass": "boostrap-sass#~3.3.6"
+  }
+}

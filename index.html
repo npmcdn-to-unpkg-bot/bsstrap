@@ -1,0 +1,168 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Base</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Android touch icon -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Base">
+    <link rel="icon" sizes="192x192" href="./resources/img/android-touch.png">
+    <!-- Apple touch icon -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Base">
+    <link rel="apple-touch-icon" href="./resources/img/apple-touch-icon.png">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./resources/img/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/main.css">
+</head>
+
+<body ng-controller="MainController as mc">
+<div class="page_layout__header">
+	<div class="header-md">
+		<div class="header-md__logo">
+			<a aria-label="Home" href="index.html" role="button">Logo</a>
+		</div>
+		<div class="header-md__nav">
+			<nav class="site-nav">
+				<a href="#" class="nav-link">Link 1</a>
+				<a href="#" class="nav-link">Link 2</a>
+			</nav>
+			<nav class="action-nav">
+				<button type="button" class="btn btn-primary btn-sm" ng-click="mc.signup();">Sign up</button>
+				<button type="button" class="btn btn-secondary btn-sm" ng-click="mc.login();">Log in</button>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="page_layout__content">
+	<!-- <button class="btn btn-primary">Normal</button>
+	<button class="btn btn-secondary">Normal</button>
+	<button class="btn btn-primary btn-sm">Small</button>
+	<button class="btn btn-primary btn-lg">Large</button>
+	<button class="btn btn-primary"><i class="material-icons md-24">face</i> Normal</button>
+	<button class="btn btn-secondary"><i class="material-icons md-24">face</i> Normal</button>
+	<button class="btn btn-primary btn-sm"><i class="material-icons md-18">face</i> Small</button>
+	<button class="btn btn-primary btn-lg"><i class="material-icons md-24">face</i> Large</button> -->
+
+	<!-- <div class="container">
+		<div class="row equal-height">
+			<div class="col-xs-12 col-md-6 m-t-2 m-b-2">
+				<div>
+					<h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+					<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+					<button class="btn btn-primary">Normal</button>
+					<button class="btn btn-primary btn-sm">Small</button>
+					<button class="btn btn-primary btn-lg">Large</button>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 m-t-2 m-b-2">
+				<div>
+					<h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+					<p class="open-sans">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+					<button class="btn btn-primary open-san-bold">Normal</button>
+					<button class="btn btn-primary btn-sm open-san-bold">Small</button>
+					<button class="btn btn-primary btn-lg open-san-bold">Large</button>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 m-t-2 m-b-2">
+				<div>
+					<h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+					<p class="roboto">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+					<button class="btn btn-primary roboto-bold">Normal</button>
+					<button class="btn btn-primary btn-sm roboto-bold">Small</button>
+					<button class="btn btn-primary btn-lg roboto-bold">Large</button>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-6 m-t-2 m-b-2">
+				<div>
+					<h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+					<p class="lato">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+					<button class="btn btn-primary lato-bold">Normal</button>
+					<button class="btn btn-primary btn-sm lato-bold">Small</button>
+					<button class="btn btn-primary btn-lg lato-bold">Large</button>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="container">
+		<!-- <button class="btn btn-primary" type="button" button-loader>
+			<span class="btn__text">Submit</span>
+			<span class="btn__loader"><span class="loader inverted small"></span></span>
+		</button> -->
+
+		<button-loader></button-loader>
+		<standard-input type="text" label="hello" inputclass="form-control"></standard-input>
+		<notification message="Hello"></notification>
+	</div>
+	
+</div>
+
+<!-- <aside class="fixed-sidebar">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+				<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+				<button class="btn btn-primary">Normal</button>
+				<button class="btn btn-primary btn-sm">Small</button>
+				<button class="btn btn-primary btn-lg">Large</button>
+				<h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+				<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+				<button class="btn btn-primary">Normal</button>
+				<button class="btn btn-primary btn-sm">Small</button>
+				<button class="btn btn-primary btn-lg">Large</button>
+				<h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+				<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+				<button class="btn btn-primary">Normal</button>
+				<button class="btn btn-primary btn-sm">Small</button>
+				<button class="btn btn-primary btn-lg">Large</button><h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+				<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+				<button class="btn btn-primary">Normal</button>
+				<button class="btn btn-primary btn-sm">Small</button>
+				<button class="btn btn-primary btn-lg">Large</button><h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+				<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+				<button class="btn btn-primary">Normal</button>
+				<button class="btn btn-primary btn-sm">Small</button>
+				<button class="btn btn-primary btn-lg">Large</button><h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+				<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+				<button class="btn btn-primary">Normal</button>
+				<button class="btn btn-primary btn-sm">Small</button>
+				<button class="btn btn-primary btn-lg">Large</button><h1>Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+				<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.</p>
+				<button class="btn btn-primary">Normal</button>
+				<button class="btn btn-primary btn-sm">Small</button>
+				<button class="btn btn-primary btn-lg">Large</button>
+			</div>
+		</div>
+		<div class="swiper-scrollbar"></div>
+	</div>
+</aside> -->
+
+
+<div class="page_layout__footer">
+	Footer
+</div>
+<script src="resources/js/libs/jquery.min.js"></script>
+<script src="resources/js/libs/angular.min.js"></script>
+<script src="resources/js/libs/angular-animate.min.js"></script>
+<script src="resources/js/libs/angular-route.min.js"></script>
+<script src="resources/js/libs/angular-sanitize.min.js"></script>
+<script src="resources/js/libs/angular-strap.js"></script>
+<script src="resources/js/libs/angular-strap.tpl.js"></script>
+<script src="resources/js/libs/swiper.min.js"></script>
+<script src="resources/js/libs/swiper.jquery.min.js"></script>
+
+<script src="resources/js/app.js"></script>
+<script src="resources/js/mainController.js"></script>
+<script src="resources/js/buttonLoaderDirective.js"></script>
+<script src="resources/js/general.js"></script>
+
+</body>
+</html>

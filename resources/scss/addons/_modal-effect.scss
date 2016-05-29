@@ -1,0 +1,56 @@
+.am-fade > .modal-dialog{
+	@include animation-duration(0.3s);
+	@include animation-timing-function(ease);
+	@include animation-fill-mode(backwards);
+  	opacity: 1;
+}
+.am-fade.am-fade-add > .modal-dialog,
+.am-fade.ng-hide-remove > .modal-dialog,
+.am-fade.ng-move > .modal-dialog{
+	@include animation-name(modalEffectIN);
+}
+.am-fade.am-fade-remove > .modal-dialog,
+.am-fade.ng-hide > .modal-dialog{
+	@include animation-name(modalEffectOUT);
+}
+.am-fade.ng-enter > .modal-dialog{
+  visibility: hidden;
+  @include animation-name(modalEffectIN);
+  @include animation-play-state(paused);
+}
+.am-fade.ng-enter.ng-enter-active > .modal-dialog{
+  visibility: visible;
+  @include animation-play-state(running);
+}
+.am-fade.ng-leave > .modal-dialog{
+  @include animation-name(modalEffectOUT);
+  @include animation-play-state(paused);
+}
+.am-fade.ng-leave.ng-leave-active > .modal-dialog{
+  @include animation-play-state(running);
+}
+
+@include keyframes(modalEffectIN) {
+	from {
+	  // @include transform(perspective(800px) rotateX(30deg) translateY(20%));
+	  @include transform(scale(0.7));
+	  opacity: 0.2;
+	}
+	to {
+	  // @include transform(perspective(800px) rotateX(0) translateY(0));
+	  @include transform(scale(1));
+	  opacity: 1;
+	}
+}
+@include keyframes(modalEffectOUT) {
+	from {
+	  // @include transform(perspective(800px) rotateX(0) translateY(0));
+	  @include transform(scale(1));
+	  opacity: 1;
+	}
+	to {
+	  // @include transform(perspective(800px) rotateX(30deg) translateY(20%));
+	  @include transform(scale(0.7));
+	  opacity: 0.2;
+	}
+}

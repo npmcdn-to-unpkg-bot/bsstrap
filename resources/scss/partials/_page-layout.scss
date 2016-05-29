@@ -1,0 +1,44 @@
+.page_layout {
+	
+}
+
+.page_layout__header {
+
+}
+
+.page_layout__content {
+	@include calc(min-height, "100vh - 176px");
+}
+
+.page_layout__footer {
+
+}
+
+.row.equal-height > [class*="col-"]{
+  @include flexbox();
+}
+
+
+.body-sidebar {
+	margin-left: 300px;
+}
+
+aside.fixed-sidebar {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 300px;
+	height: 100%;
+	background-color:$gray-lightest;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 30px;
+}
