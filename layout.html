@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Base</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Android touch icon -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Base">
+    <link rel="icon" sizes="192x192" href="./resources/img/android-touch.png">
+    <!-- Apple touch icon -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Base">
+    <link rel="apple-touch-icon" href="./resources/img/apple-touch-icon.png">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./resources/img/favicon.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/main.css">
+</head>
+
+<body ng-controller="MainController as mc">
+<div class="page_layout__header">
+	<div class="header-md">
+		<div class="header-md__logo">
+			<a aria-label="Home" href="index.html" role="button">Logo</a>
+		</div>
+		<div class="header-md__nav">
+			<nav class="site-nav">
+				<a href="#" class="nav-link">Link 1</a>
+				<a href="#" class="nav-link">Link 2</a>
+			</nav>
+			<nav class="action-nav">
+				<button type="button" class="btn btn-primary btn-sm" ng-click="mc.signup();">Sign up</button>
+				<button type="button" class="btn btn-secondary btn-sm" ng-click="mc.login();">Log in</button>
+			</nav>
+		</div>
+	</div>
+</div>
+
+<div class="page_layout__content">
+	
+</div>
+
+<div class="page_layout__footer">
+	Footer
+</div>
+<script src="resources/js/libs/jquery.min.js"></script>
+<script src="resources/js/libs/angular.min.js"></script>
+<script src="resources/js/libs/angular-animate.min.js"></script>
+<script src="resources/js/libs/angular-route.min.js"></script>
+<script src="resources/js/libs/angular-sanitize.min.js"></script>
+<script src="resources/js/libs/angular-strap.js"></script>
+<script src="resources/js/libs/angular-strap.tpl.js"></script>
+<script src="resources/js/libs/swiper.min.js"></script>
+<script src="resources/js/libs/swiper.jquery.min.js"></script>
+
+<script src="resources/js/app.js"></script>
+<script src="resources/js/mainController.js"></script>
+<script src="resources/js/buttonLoaderDirective.js"></script>
+<script src="resources/js/general.js"></script>
+
+</body>
+</html>
