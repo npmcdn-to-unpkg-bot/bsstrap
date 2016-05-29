@@ -1,4 +1,4 @@
-# BKA STATIC FRAMEWORK
+# Personal framework
 
 ### Installation
 
