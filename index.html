@@ -41,7 +41,7 @@
 </div>
 
 <div class="page_layout__content">
-	<button class="btn btn-primary">Normal</button>
+	<!-- <button class="btn btn-primary">Normal</button>
 	<button class="btn btn-secondary">Normal</button>
 	<button class="btn btn-primary btn-sm">Small</button>
 	<button class="btn btn-primary btn-lg">Large</button>
@@ -85,7 +85,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div class="container">
 		<!-- <button class="btn btn-primary" type="button" button-loader>
@@ -94,7 +94,9 @@
 		</button> -->
 
 		<button-loader></button-loader>
-		<standard-input type="text" label="hello" inputclass="form-control"></standard-input>
+
+		<standard-input type="text" label="hello" inputclass="form-control" placeholder="Insert here"></standard-input>
+
 		<notification message="Hello"></notification>
 	</div>
 	
@@ -156,8 +158,9 @@
 <script src="resources/js/libs/swiper.jquery.min.js"></script>
 
 <script src="resources/js/app.js"></script>
-<script src="resources/js/mainController.js"></script>
-<script src="resources/js/buttonLoaderDirective.js"></script>
+<script src="resources/js/controller/mainController.js"></script>
+<script src="resources/js/directive/buttonLoaderDirective.js"></script>
+<script src="resources/js/directive/standardInput.js"></script>
 <script src="resources/js/general.js"></script>
 
 </body>

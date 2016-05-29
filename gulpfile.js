@@ -59,6 +59,8 @@ gulp.task('watch', function () {
   gulp.watch('resources/scss/**/*.scss', ['sass']);
   gulp.watch('resources/css/*.css').on('change', reload);
   gulp.watch('resources/js/*.js').on('change', reload);
+  gulp.watch('resources/js/controller/*.js').on('change', reload);
+  gulp.watch('resources/js/directive/*.js').on('change', reload);
   // gulp.watch(templatesDir + '/**/*.cshtml').on('change', reload);
   gulp.watch('./Views/*.html', ['fileinclude']);
   gulp.watch('*.html').on('change', reload);
